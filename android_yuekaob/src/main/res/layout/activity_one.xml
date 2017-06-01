@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.android_yuekaob.MainActivity"
+    android:orientation="vertical"
+    >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="30dp">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="我的频道"
+                 android:textColor="#000"
+                 android:textSize="20sp"/>
+         </LinearLayout>
+
+        <com.bwie.android_yuekaob.MyGr
+            android:id="@+id/grid1"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:numColumns="3"></com.bwie.android_yuekaob.MyGr>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他频道"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <com.bwie.android_yuekaob.MyGr
+        android:id="@+id/grid2"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:numColumns="3"></com.bwie.android_yuekaob.MyGr>
+</LinearLayout>
