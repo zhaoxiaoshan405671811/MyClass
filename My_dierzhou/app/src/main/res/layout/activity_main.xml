@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1.my_dierzhou.MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/b"
+        android:id="@+id/image_id"
+        android:layout_marginTop="70dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_id"
+        android:orientation="vertical"
+        android:layout_below="@+id/image_id">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_name"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_pass"
+            />
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linear_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_wangji"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:layout_below="@+id/linear_id"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="40dp"
+
+        />
+
+    <CheckBox
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linear_id"
+        android:layout_width="wrap_content"
+        android:checked="true"
+        android:layout_marginLeft="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_jizhu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安全登录"
+        android:layout_below="@+id/linear_id"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="270dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/button_denglu"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/checkbox_wangji"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_id"
+        android:text="忘记密码?"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button_denglu"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_"
+        android:text="新用户注册"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button_denglu"
+        android:layout_alignParentRight="true"
+        />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiobutton_id"
+        android:layout_below="@+id/textview_"
+        android:layout_marginTop="80dp"
+        android:checked="true"
+        android:layout_marginLeft="65dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_"
+        android:layout_marginTop="90dp"
+        android:text="我以阅读并同意服务条款"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/textview_tiaokuan"
+        />
+
+
+</RelativeLayout>
